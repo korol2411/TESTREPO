@@ -1,0 +1,298 @@
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>defaultitmember</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ </head>
+<body>
+    <div class = "header" >
+        <div class="container">
+            <div class="nav">
+                <img class = "triangle" src="Resources/triangle.png" alt="triangle">
+                <ul class="menu">
+                    <li>
+                        <a href="#about">Home</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#services">Service</a>
+                    </li>
+                    <li>
+                        <a href="#articles">Articles</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                           $(".menu").on("click","a", function (event) {
+                               event.preventDefault();
+                               var id  = $(this).attr('href'),
+                                   top = $(id).offset().top;
+                               $('body,html').animate({scrollTop: top}, 1500);
+                           });
+                       });
+                    </script>
+                </ul>
+                <a class="tel" href="tel:+375293416614">
+                    +375 29 341-66-14
+                </a>
+            </div>
+            <div class = "title">
+                <div class="menu">
+                    <div class="title">
+                        <h1>HI, I’M Dima.</h1>
+                        <div class="nav">
+                            <h1>A CREATIVE</h1>
+                            <img class = "triangle" src="Resources/triangle.png" alt="triangle">
+                            <h1>PROGRAMMER</h1>
+                        </div>
+                         <h1>BASED IN MINSK</h1>
+                        <div class="sub_title">
+                            <h1>DESIGN</h1>
+                            <img class = "triangle" src="Resources/triangle.png" alt="triangle">
+                            <h1>DEVELOPMENT</h1>
+                            <img class = "triangle" src="Resources/triangle.png" alt="triangle">
+                            <h1>GAME DEVELOPMENT</h1>
+                        </div>
+                        <div class="sub_title">
+                            <div class="cube">Have questions?</div>
+                            <button onclick="TalkButtonClick()" type="button" class="talk_button">Let's talk.</button>
+                        </div>
+                    </div>
+                    <div class="my_Image">
+                        <img class="border_Image" src="Resources/my.jpg" alt="my">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id = "about" >
+        <div class="container">
+            <div class="menu">
+                <div class="margin_Text_Top">
+                    <div class="nav">
+                        <h1 class="small_sub_dima">Dima</h1>
+                        <img class = "triangle" src="Resources/triangle.png" alt="triangle">
+                        <h1 class="small_Text">Meleshenya</h1>
+                    </div>
+                    <h1 class="big_Text">Junior++/Middle .NET and</h1>
+                    <h1 class="big_Text">Junior frontend and</h1>
+                    <h1 class="big_Text">SQL developer</h1>
+                </div>
+                    <div class="margin_Text_Top">
+                        <div class="marginLeftText">
+                            <h1 class="center_Text">I continue to gain knowledge in order to become the best in my field.</h1>
+                            <h1 class="Text">Working as a programmer, I feel happy,I do my best to face more complex tasks.</h1>
+                            <h1 class="sub_Text">Information to start viewing:</h1>
+                            <div class="nav">
+                                <h1 class="red_small_text">BORN IN</h1>
+                                <h1 class="red_small_text_margin">EXPERIENCE WORK</h1>
+                                <h1 class="red_small_text_margin">DATE OF BIRTH</h1>
+                            </div>
+                            <div class="nav">
+                                <h1 class="black_small_text">Minsk, Belarus</h1>
+                                <h1 class="black_small_text_margin1">1+ Year</h1>
+                                <h1 class="black_small_text_margin2">12 october 2003</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin_Text_Top">
+                    <div class="nav_two">
+                        <div class="info_margin_left">
+                            <h1 id="Years" class="big_Text">0</h1>
+                            <script>
+                            $('#Years').animate({
+                                numberValue: 1
+                                }, {
+                                duration: 500,
+                                easing: 'linear',
+                                step: function() {
+                                  $('#Years').text(Math.ceil(this.numberValue));
+                                }
+                              });
+                            </script>
+                            <h1 class="small_sub_text">YEARS OF EXPERIENCE</h1>
+                        </div>
+                        <div class="info_margin_left">  
+                            <h1 id="ProjectComplited" class="big_Text">14</h1>
+                            <script>
+                                $('#ProjectComplited').animate({
+                                    numberValue: 14
+                                    }, {
+                                    duration: 500,
+                                    easing: 'linear',
+                                    step: function() {
+                                      $('#ProjectComplited').text(Math.ceil(this.numberValue));
+                                    }
+                                  });
+                                </script>
+                            <h1 class="small_sub_text">PROJECT COMPLITED</h1>
+                        </div>
+                        <div class="info_margin_left">
+                            <h1 id="HappyClients" class="big_Text" >0</h1>
+                            <script>
+                                $('#HappyClients').animate({
+                                    numberValue: 0
+                                    }, {
+                                    duration: 500,
+                                    easing: 'linear',
+                                    step: function() {
+                                      $('#HappyClients').text(Math.ceil(this.numberValue));
+                                    }
+                                  });
+                                </script>
+                            <h1 class="small_sub_text">HAPPY CLIENTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "portfolio" >
+        <div class="container">
+            <div class="section_start">
+                <img class="triangle" src="Resources/triangle.png" alt="triangle">
+                <h1 class="section_start_Text">Portfolio</h1>
+                <h1 class="small_sub_text_section">A COUPLE OF READY-MADE PROJECTS</h1>
+            </div>
+            <div class="margin_Text_Top">
+                <div class="nav_two">
+                    <div class="imagePhone">
+                        <img class="image_portfolio" src="Resources/neural neteork.jpg" alt="IMAGE1920">
+                    </div>
+                    <div class="margin_portfolio_left">
+                        <h1 class="red_portfolio">Neural Network</h1>
+                        <h1 class="center_Text">A neural network that reads numbers from one to ten</h1>
+                        <h1 onclick="ReadMoreButtonClick('NeuralNetwork')" class="small_Text">Read more</h1>
+                    </div>
+                </div>
+                <div class="nav_two">
+                    <div class="phoneText">
+                        <h1 class="red_portfolio">Unity Client Server</h1>
+                        <h1 class="center_Text">Agronavigator for remote operation of tractors in the fields</h1>
+                        <h1 onclick="ReadMoreButtonClick('UnityClientServer')" class="small_Text">Read more</h1>
+                    </div>
+                    <div class="margin_portfolio_left">
+                        <img class="image_portfolio" src="Resources/unity.jpeg" alt="IMAGE1920">
+                    </div>
+                </div>
+                <div class="nav_two">
+                    <div class="imagePhone">
+                        <img class="image_portfolio" src="Resources/xamarin.png" alt="IMAGE1920">
+                    </div>
+                    <div class="margin_portfolio_left">
+                        <h1 class="red_portfolio">Online Store (Xamarin)</h1>
+                        <h1 class="center_Text">Mobile application for receiving services from the hospital</h1>
+                        <h1 onclick="ReadMoreButtonClick('OnlineStore')" class="small_Text">Read more</h1>
+                    </div>
+                </div>
+                <div class="nav_two">
+                    <div class="phoneText">
+                        <h1 class="red_portfolio">OnlineService (WPF)</h1>
+                        <h1 class="center_Text">An application for the ability to analyze the number of steps taken over a certain period (with a graph) for different users.</h1>
+                        <h1 onclick="ReadMoreButtonClick('Service')" class="small_Text">Read more</h1>
+                    </div>
+                    <div class="margin_portfolio_left">
+                        <img class="image_portfolio" src="Resources/net.jpg" alt="IMAGE1920">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "services" >
+        <div class="container">
+            <div class="section_start">
+                <img class="triangle" src="Resources/triangle.png" alt="triangle">
+                <h1 class="section_start_Text">Service</h1>
+                <h1 class="small_sub_text_section">I'M A FAST LEARNER</h1>
+            </div>
+            <div class="nav_two">
+                <div class="service">
+                    <h1 class = "service_big_text">Web Design Development</h1>
+                    <h1 class = "service_small_text">This site is an example of my abilities in html5, css3, javascript.</h1>
+                </div>
+                <div class="service">
+                    <h1 class = "service_big_text">Sql Development</h1>
+                    <h1 class = "service_small_text">Creation and maintenance of SQL databases. Database integration into applications.</h1>
+                </div>
+            </div>
+            <div class="nav_two">
+                <div class="service">
+                    <h1 class = "service_big_text">.NET Development</h1>
+                    <h1 class = "service_small_text">Application development on WPF, Xamarin Forms, Windows Forms.</h1>
+                </div>
+                <div class="service">
+                    <h1 class = "service_big_text">Unity Development</h1>
+                    <h1 class = "service_small_text">Creating 2D and 3D games in the Unity cross-platform computer game development environment.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "articles" >
+        <div class="container">
+            <div class="section_start">
+                <img class="triangle" src="Resources/triangle.png" alt="triangle">
+                <h1 class="section_start_Text">Articles</h1>
+                <h1 class="small_sub_text_section"> QUESTIONS THAT REVEAL ME</h1>
+            </div>
+            <div class="articles">
+                <div class="nav">
+                    <div>
+                        <h1 class="articles_red_text">Development  /  February 07, 2023</h1>
+                        <h1 class="small_sub_text">Why I learn C# and Javascript with HTML and CSS</h1>
+                    </div>
+                    <h1 class="articles_small_text">It's programmers languages was main in my college and i like this. </h1>
+                </div>
+            </div>
+            <div class="articles">
+                <div class="nav">
+                    <div>
+                        <h1 class="articles_red_text">Development  /  February 06, 2023</h1>
+                        <h1 class="small_sub_text">What I studied (from the main one) </h1>
+                    </div>
+                    <h1 class="articles_small_text"> Data Structures and Algorithms, SQL Server, ASP.NET MVC, WPF, WF, Unity, OOP and a little bit of everything</h1>
+                </div>
+            </div>
+            <div class="articles">
+                <div class="nav">
+                    <div>
+                        <h1 class="articles_red_text">Work  /  February 26, 2022</h1>
+                        <h1 class="small_sub_text">Information about me and my experience</h1>
+                    </div>
+                    <h1 class="articles_small_text">I've been developing for about 1.5 years myself, I've only been working for about 3 months. I'm learning fast</h1>
+                </div>
+            </div>
+            <button type="button" class="articles_button">
+                <h1 class="articles_button_text">Browse Articles</h1>
+            </button>
+            </div>
+        </div>
+    </section>
+    <footer id = "contact" class="contact">
+        <div class="container">
+            <div class="contact__us">
+                <div class="contact_image_left_margin">
+                    <div class="contact__us_text">Contacts</div>
+                    <div class="contact__us_text">+375 44 564-45-64 </div>
+                    <div class="contact__us_text">defaultitmember@gmail.com</div>
+                </div>
+                <div class="contact_image_left_margin">
+                    <img id="instagram" onclick="OpenSocialNetwork(document.getElementById('instagram').id)" class="contact_image" src="Resources/instagram.png" alt="instagram">
+                    <img id="vk" onclick="OpenSocialNetwork(document.getElementById('vk').id)" class="contact_image" src="Resources/vk.png" alt="vk">
+                    <img id="telegram" onclick="OpenSocialNetwork(document.getElementById('telegram').id)" class="contact_image" src="Resources/telegram.png" alt="telegram">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> 
+</html>
